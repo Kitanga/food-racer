@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Racer</title>
+
+    <link rel="stylesheet" href="./menus.css">
+</head>
+<body>
+    <div class="pages">
+        <!-- <div class="pages__page" id="preloader">
+            <div id="loader-box">
+                <div id="loader-box-filler"></div>
+            </div>
+        </div> -->
+        <div class="pages__page" id="landing">
+            <div id="logo">
+                <img src="./img/logo.png" alt="KFC logo">
+            </div>
+            <div id="play" onclick="switchToPage('pick-meal');">
+                PLAY
+            </div>
+        </div>
+        <div class="pages__page" id="pick-meal">
+            <h2 class="pages_page_header">
+                Pick a meal
+            </h2>
+            <div class="meal_selector">
+                <div class="meal_selector__left_arrow">
+                    <img src="./img/arrow.png" alt="An arrow pointing to the left.">
+                </div>
+                <div class="meal_presenter">
+                    <img src="./img/BURGER_1.png" alt="Burger">
+                </div>
+                <div class="meal_selector__right_arrow">
+                    <img src="./img/arrow.png" alt="An arrow pointing to the right.">
+                </div>
+            </div>
+            <div id="start" onclick="switchToPage('searching', connectToMatch);">
+                START
+            </div>
+        </div>
+        <div class="pages__page" id="searching">
+            Searching...
+        </div>
+        <div class="pages__page" id="race">
+            Race!
+        </div>
+    </div>
+
+    <script src="./socket.io-client.js"></script>
+    <script src="./FoodType.js"></script>
+    <script src="./menu.js"></script>
+</body>
+</html>
