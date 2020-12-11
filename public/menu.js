@@ -1,7 +1,8 @@
 // Place all code to do with menus here
 
 // First connect to the server
-const socket = io('ws://172.26.1.230:3000');
+// const socket = io('ws://172.26.1.230:3000');
+const socket = io('ws://d31e9bughoy981.cloudfront.net:3000/');
 
 const user = {
     name: 'Player',
